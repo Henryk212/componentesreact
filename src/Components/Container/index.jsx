@@ -1,8 +1,6 @@
 import React from "react";
-
 import Titulo from "../Titulo";
 import Conta from "../Conta";
-
 import styled from "styled-components";
 
 const Container = styled.div`
