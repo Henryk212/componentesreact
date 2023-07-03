@@ -36,7 +36,7 @@ const Conta = () => {
       <Btn onClick={toggleHandler}>
         <IconeMargin
           src={toggleState ? privado : olho_icone}
-          alt="Privacidade d Saldo"
+          alt="Privacidade do Saldo"
         />
       </Btn>
     </Box>
