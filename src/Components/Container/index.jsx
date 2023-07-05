@@ -2,11 +2,18 @@ import React from "react";
 import Titulo from "../Titulo";
 import Conta from "../Conta";
 import styled from "styled-components";
+import Extrato from "../Extrato";
 
 const Container = styled.div`
 background-color: #f1f1f1;
 min-height: 90vh;
 padding: 0px 15vw;
+
+@media (max-width: 800px) {
+
+    flex-direction: column;
+  }
+
 `;
 const Conteudo = styled.section`
 display: flex;
@@ -19,6 +26,7 @@ export default () => {
       <Titulo>Olá Fulanoo!</Titulo>
       <Conteudo>
         <Conta />
+        <Extrato></Extrato>
       </Conteudo>
     </Container>
   );
