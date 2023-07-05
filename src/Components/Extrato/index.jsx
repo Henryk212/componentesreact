@@ -1,6 +1,7 @@
 import React from 'react'
-import { Box } from '../UI'
+import { Box, Btn } from '../UI'
 import { extratoLista } from '../../info'
+import Items from '../Items';
 
 export default function Extrato() {
   return (
@@ -8,17 +9,13 @@ export default function Extrato() {
    {
     extratoLista.updates.map(({id,type,value, from,date}) => {
         return(
-        <div key={id}>
-            <div>{type}</div>
-            <div>{from}</div>
+          <Items key={id} type={type} from={from} value={value} date={date} ></Items>
 
-        </div>
-    )
-    })
+        
+    );
+    })}
 
-   };
-
-
+    <Btn>Ver mais</Btn>
     </Box>
   )
 }
